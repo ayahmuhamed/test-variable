@@ -1,17 +1,17 @@
-resource "null_resource" "env_test" {
+resource "null_resource" "env_test"{
 
-  provisioner "local-exec" {
+  provisioner "local-exec"{
     command = "echo **** Env script test *******"
 
   }
 
-  provisioner "local-exec" {
+  provisioner "local-exec"{
 
 
     command = "printenv"
   }
 
-  provisioner "local-exec" {
+  provisioner "local-exec"{
 
     command = "echo **** Env script test *******"
   }
